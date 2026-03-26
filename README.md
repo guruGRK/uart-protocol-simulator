@@ -1,12 +1,12 @@
 # UART Protocol Communication System (C)
 
-## 📌 Overview
+## Overview
 
 This project implements a custom UART communication protocol using Embedded C concepts. It simulates communication between a host and an embedded device.
 
 ---
 
-## 🧠 Features
+## Features
 
 * Packet-based communication protocol
 * State machine parser
@@ -15,7 +15,7 @@ This project implements a custom UART communication protocol using Embedded C co
 
 ---
 
-## 📦 Packet Structure
+## Packet Structure
 
 [START][LENGTH][COMMAND][DATA][CHECKSUM]
 
@@ -28,23 +28,26 @@ This project implements a custom UART communication protocol using Embedded C co
 
 ---
 
-## ▶️ Example Output
+## Example Output
 
+        LED test
 LED ON
-AA 01 00 01 AC
-
+Status: Success
+Data:  1
+        Sensor Test
 Temperature: 30
-AA 01 00 1E C9
+Status: Success
+Data: 1E
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 UART Input → Protocol Parser → Command Handler → Response
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 gcc src/*.c -Iinclude -o uart
@@ -53,7 +56,7 @@ gcc src/*.c -Iinclude -o uart
 
 ---
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 * UART protocol design
 * Embedded C modular structure
